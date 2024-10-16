@@ -66,6 +66,23 @@ header {
     background-color: #b03a2e; /* Barras de progreso en tonos vino */
 }
 
+card-grup {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: #f0f0f0;
+}
+
+/* Estilos para los títulos */
+card-grup h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff; /* Texto blanco */
+}
+
 form {
     background-color: rgba(113, 104, 104, 0.9); /* Fondo blanco semitransparente */
     padding: 20px;
@@ -91,4 +108,81 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #522020; /* Color más oscuro al pasar el ratón */
+}
+
+/* Sección de Proyectos */
+#proyectos {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: #f0f0f0;
+}
+
+/* Estilos para los títulos dentro de la sección */
+#proyectos h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para el grupo de tarjetas (cards) */
+#proyectos .card-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Estilos para las tarjetas individuales */
+#proyectos .card {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border: 1px solid #3b0a19; /* Borde color vino oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 400px; /* Centrar y ajustar el tamaño de las tarjetas */
+}
+
+/* Efecto hover en las tarjetas */
+#proyectos .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para las imágenes en las tarjetas */
+#proyectos .card img {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #3b0a19; /* Borde inferior color vino */
+}
+
+/* Estilo para los títulos de las tarjetas */
+#proyectos .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #3b0a19; /* Texto vino oscuro */
+}
+
+/* Estilo para los textos dentro de las tarjetas */
+#proyectos .card-text {
+    font-size: 1rem;
+    color: #3b0a19; /* Texto vino oscuro */
+}
+
+/* Estilo para el texto pequeño (small text) */
+#proyectos .text-body-secondary {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* Responsivo: ajusta el diseño para pantallas pequeñas */
+@media (max-width: 768px) {
+    #proyectos .card-group {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
